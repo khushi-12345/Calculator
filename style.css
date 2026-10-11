@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  background: radial-gradient(circle at top left, #26345f, #10121e 65%);
+}
+
+.calculator {
+  width: 100%;
+  max-width: 370px;
+  padding: 25px;
+  border: 1px solid #ffffff20;
+  border-radius: 28px;
+  background: #ffffff0d;
+  box-shadow: 0 25px 70px #0006;
+  backdrop-filter: blur(20px);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.top h2 {
+  font-size: 21px;
+}
+
+.top span {
+  color: #a5b4fc;
+  font-size: 11px;
+}
+
+.display {
+  min-height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 15px 5px 25px;
+}
+
+#history {
+  min-height: 24px;
+  color: #9ca3af;
+  font-size: 15px;
+}
+
+#result {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  text-align: right;
+  font-size: clamp(30px, 9vw, 42px);
+  font-weight: 600;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+button {
+  height: 62px;
+  border: 1px solid #ffffff08;
+  border-radius: 18px;
+  background: #ffffff0c;
+  color: white;
+  font-size: 21px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #ffffff25;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.94);
+}
+
+.utility {
+  color: #a5b4fc;
+  background: #818cf826;
+}
+
+.operator {
+  color: #c4b5fd;
+  background: #8b5cf630;
+}
+
+.equals {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+}
+
+.equals:hover {
+  background: linear-gradient(135deg, #a78bfa, #818cf8);
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+footer {
+  margin-top: 22px;
+  text-align: center;
+  color: #858da5;
+  font-size: 12px;
+}
+
+@media (max-width: 380px) {
+  .calculator {
+    padding: 18px;
+  }
+
+  .buttons {
+    gap: 9px;
+  }
+
+  button {
+    height: 55px;
+    border-radius: 14px;
+  }
+}

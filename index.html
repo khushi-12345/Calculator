@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <header class="top">
+      <h2>Calculator</h2>
+      <span>● SMART MODE</span>
+    </header>
+
+    <section class="display">
+      <div id="history"></div>
+      <input id="result" value="0" readonly aria-label="Display">
+    </section>
+
+    <section class="buttons">
+      <button class="utility" data-action="clear">AC</button>
+      <button class="utility" data-action="delete">⌫</button>
+      <button class="utility" data-action="percent">%</button>
+      <button class="operator" data-op="/">÷</button>
+
+      <button data-num="7">7</button>
+      <button data-num="8">8</button>
+      <button data-num="9">9</button>
+      <button class="operator" data-op="*">×</button>
+
+      <button data-num="4">4</button>
+      <button data-num="5">5</button>
+      <button data-num="6">6</button>
+      <button class="operator" data-op="-">−</button>
+
+      <button data-num="1">1</button>
+      <button data-num="2">2</button>
+      <button data-num="3">3</button>
+      <button class="operator" data-op="+">+</button>
+
+      <button class="utility" data-action="sign">+/−</button>
+      <button class="zero" data-num="0">0</button>
+      <button data-action="decimal">.</button>
+      <button class="equals" data-action="equals">=</button>
+    </section>
+
+    <footer>Designed for everyday calculations</footer>
+  </main>
+</body>
+</html>
